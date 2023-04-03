@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
+
 <body>
     <div class="judul">
         <h1>Selamat Datang</h1>
         <h2>Admin Transaksi</h2>
     </div>
 </body>
+
 </html>

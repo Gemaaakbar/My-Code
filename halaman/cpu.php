@@ -7,12 +7,14 @@ $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cpu List</title>
 </head>
+
 <body>
     <div class="judul">
         <h1>
@@ -29,19 +31,19 @@ $result = mysqli_query($conn, $sql);
             <th>Socket</th>
             <th>Price</th>
         </tr>
-        <?php while
-            ($row = mysqli_fetch_assoc($result)){
+        <?php while ($row = mysqli_fetch_assoc($result)) {
         ?>
-        <tr>
-            <td><?= $row['id_cpu']?></td>
-            <td><?= $row['brand_cpu']?></td>
-            <td><?= $row['jenis_cpu']?></td>
-            <td><?= $row['gen_cpu']?></td>
-            <td><?= $row['freq_cpu']?></td>
-            <td><?= $row['jenis_motherboard']?></td>
-            <td><?= $row['harga_cpu']?></td>
-        <?php } ?>
-        </tr>
+            <tr>
+                <td><?= $row['id_cpu'] ?></td>
+                <td><?= $row['brand_cpu'] ?></td>
+                <td><?= $row['jenis_cpu'] ?></td>
+                <td><?= $row['gen_cpu'] ?></td>
+                <td><?= $row['freq_cpu'] ?></td>
+                <td><?= $row['jenis_motherboard'] ?></td>
+                <td><?= $row['harga_cpu'] ?></td>
+            <?php } ?>
+            </tr>
     </table>
 </body>
+
 </html>

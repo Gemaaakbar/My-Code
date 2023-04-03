@@ -18,12 +18,14 @@ $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaction Drive List</title>
 </head>
+
 <body>
     <div class="judul">
         <h1>
@@ -39,18 +41,18 @@ $result = mysqli_query($conn, $sql);
             <th>Drive Quantity</th>
             <th>Total</th>
         </tr>
-        <?php while
-            ($row = mysqli_fetch_assoc($result)){
+        <?php while ($row = mysqli_fetch_assoc($result)) {
         ?>
-        <tr>
-            <td><?= $row['id_tr_drive']?></td>
-            <td><?= $row['nama_costumer']?></td>
-            <td><?= $row['nama_drive']?></td>
-            <td><?= $row['harga_drive']?></td>
-            <td><?= $row['kuantitas']?></td>
-            <td><?= $row['total_pembayaran']?></td>
-        <?php } ?>
-        </tr>
+            <tr>
+                <td><?= $row['id_tr_drive'] ?></td>
+                <td><?= $row['nama_costumer'] ?></td>
+                <td><?= $row['nama_drive'] ?></td>
+                <td><?= $row['harga_drive'] ?></td>
+                <td><?= $row['kuantitas'] ?></td>
+                <td><?= $row['total_pembayaran'] ?></td>
+            <?php } ?>
+            </tr>
     </table>
 </body>
+
 </html>

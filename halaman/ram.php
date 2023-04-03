@@ -7,6 +7,7 @@ $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@ $result = mysqli_query($conn, $sql);
     <link rel="stylesheet" href="style.css">
     <title>Ram List</title>
 </head>
+
 <body>
     <div class="judul">
         <h1>
@@ -29,18 +31,18 @@ $result = mysqli_query($conn, $sql);
             <th>Brand</th>
             <th>Price</th>
         </tr>
-        <?php while
-            ($row = mysqli_fetch_assoc($result)){
+        <?php while ($row = mysqli_fetch_assoc($result)) {
         ?>
-        <tr>
-            <td><?= $row['id_ram']?></td>
-            <td><?= $row['jenis_ram']?></td>
-            <td><?= $row['ukuran_ram']?></td>
-            <td><?= $row['freq_ram']?></td>
-            <td><?= $row['merek_ram']?></td>
-            <td><?= $row['harga_ram']?></td>
-        <?php } ?>
-        </tr>
+            <tr>
+                <td><?= $row['id_ram'] ?></td>
+                <td><?= $row['jenis_ram'] ?></td>
+                <td><?= $row['ukuran_ram'] ?></td>
+                <td><?= $row['freq_ram'] ?></td>
+                <td><?= $row['merek_ram'] ?></td>
+                <td><?= $row['harga_ram'] ?></td>
+            <?php } ?>
+            </tr>
     </table>
 </body>
+
 </html>
