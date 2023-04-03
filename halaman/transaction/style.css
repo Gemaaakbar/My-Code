@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+}
+.badan{
+    background-color: white;
+    font-size: medium;
+}
+header{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.judul{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.menu{
+    background-color: crimson;
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu ul{
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul li a:hover{
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding: 0 20px;
+    transition-duration: 0.5s;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+table tr th{
+    background-color: crimson;
+    padding: 10px;
+}
+table tr td{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5px;
+}
